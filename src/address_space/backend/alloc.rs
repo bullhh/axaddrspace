@@ -46,7 +46,7 @@ impl<H: PagingHandler> Backend<H> {
                 |_va| PhysAddr::from(0),
                 size,
                 MappingFlags::empty(),
-                false,
+                true,
                 false,
             )
             .is_ok()
